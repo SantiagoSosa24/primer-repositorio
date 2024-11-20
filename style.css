@@ -43,7 +43,23 @@ body {
     color: #f33aa0;
     text-transform: uppercase;
     font-weight: bold;
+
 }
+
+.logo img {
+    width: 60px; /* Cambia según el tamaño deseado */
+    height: 60px; /* Mantiene las proporciones */
+    display: block; /* Asegura que no tenga espacio extra */
+}
+
+.menu.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacio entre logo y menú */
+}
+
+
+
 .menu .navbar ul li {
     position: relative;
     float: left;
@@ -194,8 +210,11 @@ footer {
     transform: scale(1.1); /* Efecto de hover */
 }
 
-p {
-    text-align: center;
-
-
+.custom-space {
+    margin: 20px 0; /* 20px de margen arriba y abajo */
+    padding: 10px;  /* Espaciado interno de 10px */
 }
+
+
+
+
