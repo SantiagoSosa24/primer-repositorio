@@ -4,14 +4,14 @@
     box-sizing: 0;
     text-decoration: none;
     list-style: none;
-
+  
 }
 
 body {
     font-family: cursive;
     position: relative;
     padding-bottom: 500px;
-   
+   background-color: #f9afd7;
 
 
 }
@@ -47,15 +47,15 @@ body {
 }
 
 .logo img {
-    width: 60px; /* Cambia según el tamaño deseado */
-    height: 60px; /* Mantiene las proporciones */
-    display: block; /* Asegura que no tenga espacio extra */
+    width: 60px; 
+    height: 60px; 
+    display: block; 
 }
 
 .menu.container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Espacio entre logo y menú */
+    justify-content: space-between; 
 }
 
 
@@ -122,15 +122,14 @@ body {
        
 }
 
-img {
-    border: none;
-    outline: none;
-}
+
+
 
 h2{
     text-align: center;
     margin-top: 50px;
     font-size: 2rem;
+    
 
 }
 
@@ -139,6 +138,7 @@ h2{
     height: 500px;
     margin: 50px auto 0;
     overflow: hidden;
+    
 
    
 }
@@ -212,9 +212,20 @@ footer {
 
 .custom-space {
     margin: 20px 0; /* 20px de margen arriba y abajo */
-    padding: 10px;  /* Espaciado interno de 10px */
+    padding: 10px;  /* Para el espaciado interno  */
 }
 
 
+.FotoLocal {
+    width: 600px;
+    height: 500px;
+    margin: 1%;
+    margin-top: -1%;
+   
 
+}
+
+img{
+    border-radius: 15px;
+}
 
