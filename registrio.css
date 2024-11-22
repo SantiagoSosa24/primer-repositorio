@@ -1,0 +1,100 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(145deg, #ff87d4, #f1c6e1);
+    height: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.formulario {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.formulario h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #6C3483;
+    border-bottom: 2px solid #ad2079;
+    padding-bottom: 10px;
+}
+
+.formulario .usuario, .formulario .contrasena {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #adadad;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    transition: border-color 0.3s;
+}
+
+.formulario input:focus {
+    border-color: #6C3483;
+}
+
+.formulario label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #adadad;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.formulario input:focus ~ label,
+.formulario input:not(:placeholder-shown) ~ label {
+    top: -10px;
+    font-size: 14px;
+    color: #6C3483;
+}
+
+/* Botón Enviar */
+.formulario input[type="submit"] {
+    background: #ad2079;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario input[type="submit"]:hover {
+    background: #8e1e68;
+}
+
+/* Opciones adicionales (enlaces) */
+.formulario .registrarse {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6C3483;
+}
+
+.formulario .registrarse a {
+    color: #ad2079;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.formulario .registrarse a:hover {
+    text-decoration: underline;
+}

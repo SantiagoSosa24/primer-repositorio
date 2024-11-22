@@ -16,7 +16,7 @@
                 </a>
                 <input type="checkbox" id="menu" />
                 <label for="menu">
-                    <img src="#" class="menu-icono" alt="">
+                    <img src="ImagenesProyecto/logo.png" class="menu-icono" alt="Abrir menú">
                 </label>
                 <nav class="navbar"> 
                     <ul>
@@ -33,7 +33,7 @@
 
     <div class="formulario">
         <h1>¡Crea tu cuenta!</h1>
-        <form>
+        <form id="registroForm">
             <div class="usuario">
                 <input type="text" required>
                 <label>Nombre</label>
@@ -63,5 +63,15 @@
             <p>&copy; Dulce Antojo 2024</p>
         </div>
     </footer>
+
+    <script>
+        const form = document.getElementById('registroForm');
+
+        
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            window.location.href = 'login.html'; 
+        });
+    </script>
 </body>
 </html>

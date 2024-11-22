@@ -16,7 +16,7 @@
                 </a>
                 <input type="checkbox" id="menu"/>
                 <label for="menu">
-                    <img src="#" class="menu-icono" alt="">
+                    <img src="ImagenesProyecto/logo.png" class="menu-icono" alt="Abrir menú">
                 </label>
                 <nav class="navbar"> 
                     <ul>
@@ -32,7 +32,7 @@
     </header>
 
     <div class="formulario">
-        <h1>Inicia sesión! :D </h1>
+        <h1>🍰 ¡Inicia sesión! 🍰 </h1>
         <form action="#">
             <div class="usuario">
                 <input type="text" required>
@@ -42,13 +42,25 @@
                 <input type="password" required>
                 <label>Contraseña</label>
             </div>
-            <div class="recordar">¿Olvidó su contraseña?</div>
-          <input type="submit" value="Iniciar"> 
+            
+          <input type="submit" id="LoginBtn" value="Iniciar"> 
             <div class="registrarse">
                 Quiero hacer el <a href="Registro.html">registro</a>
             </div>
         </form>
     </div>
+
+    <script>
+        // Selecciona el botón por su id
+        const loginButton = document.getElementById('LoginBtn');
+
+        // Añade un evento de clic al botón
+        loginButton.addEventListener('click', function (event) {
+            event.preventDefault(); // Evita el envío del formulario
+            window.location.href = 'index.html'; // Redirige a la página de inicio
+        });
+    </script>
+
 
     <footer>
         <div class="footer-content">
